@@ -292,12 +292,6 @@
     )
   }
 
-  let spell-meta-keys = (
-    range: "射程",
-    duration: "持续时间",
-    cost: "消耗",
-  )
-
   let spell(name, ..args) = block(
     breakable: false,
     above: leading + line-height,
@@ -310,7 +304,7 @@
       block(inset: (left: 1em), above: leading, {
         set text(9pt)
         for (key, value) in args.named() {
-          strong(spell-meta-keys.at(key))
+          strong(key)
           [：]
           value
           linebreak()
