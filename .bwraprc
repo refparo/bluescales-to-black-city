@@ -1,0 +1,2 @@
+--bind-try $HOME/.cache/typst $HOME/.cache/typst
+--bind $PWD $PWD
