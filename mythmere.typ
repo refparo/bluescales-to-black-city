@@ -292,7 +292,7 @@
     )
   }
 
-  let spell(name, ..args) = block(
+  let def(name, ..args) = block(
     breakable: false,
     above: leading + line-height,
     {
@@ -374,7 +374,7 @@
     table-fill: table-fill,
     theme: theme,
     infoblock: infoblock,
-    spell: spell,
+    def: def,
     notes: notes,
     random-table: random-table,
   )
